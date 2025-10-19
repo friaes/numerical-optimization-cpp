@@ -1,7 +1,7 @@
 # Applied Optimization
 ### How to compile:
 ```bash
- cd aopt-exerciseN
+ cd Programming_exercises/aopt-exerciseN
  mkdir build/
  cd build/
  cmake ..
