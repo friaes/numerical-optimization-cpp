@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-src"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-build"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-src"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-build"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

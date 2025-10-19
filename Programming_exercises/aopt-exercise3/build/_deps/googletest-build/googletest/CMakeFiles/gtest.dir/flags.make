@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-src/googletest/include -I/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-src/googletest/include -I/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 

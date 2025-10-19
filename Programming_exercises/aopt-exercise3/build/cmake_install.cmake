@@ -1,4 +1,4 @@
-# Install script for directory: /home/rodrigo/jmcs/aopt/aopt-exercise3
+# Install script for directory: /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-build/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/EigenTutorial/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/CsvExporter/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/ConvexityTests/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/MassSpringSystem/cmake_install.cmake")
-  include("/home/rodrigo/jmcs/aopt/aopt-exercise3/build/MassSpringProblemEvaluation/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/EigenTutorial/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CsvExporter/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/ConvexityTests/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/MassSpringSystem/cmake_install.cmake")
+  include("/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/MassSpringProblemEvaluation/cmake_install.cmake")
 
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rodrigo/jmcs/aopt/aopt-exercise3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

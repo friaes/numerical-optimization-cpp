@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch/unit_tests.cc" "GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o" "gcc" "GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o.d"
+  "/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch/unit_tests.cc" "GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o" "gcc" "GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

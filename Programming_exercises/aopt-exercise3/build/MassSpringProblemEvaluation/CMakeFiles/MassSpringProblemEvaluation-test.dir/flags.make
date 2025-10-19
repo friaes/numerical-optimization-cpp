@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DINCLUDE_TEMPLATES
 
-CXX_INCLUDES = -I/home/rodrigo/jmcs/aopt/aopt-exercise3/include -I/home/rodrigo/jmcs/aopt/aopt-exercise3/external/eigen -I/home/rodrigo/jmcs/aopt/aopt-exercise3/MassSpringSystem -isystem /home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-src/googletest/include -isystem /home/rodrigo/jmcs/aopt/aopt-exercise3/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/include -I/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/external/eigen -I/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/MassSpringSystem -isystem /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-src/googletest/include -isystem /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

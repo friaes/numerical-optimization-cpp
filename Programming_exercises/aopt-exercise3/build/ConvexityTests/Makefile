@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3
+CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3/build
+CMAKE_BINARY_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles /home/rodrigo/jmcs/aopt/aopt-exercise3/build/ConvexityTests//CMakeFiles/progress.marks
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles 0
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/ConvexityTests//CMakeFiles/progress.marks
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/clean
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/preinstall
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/preinstall
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ConvexityTests/CMakeFiles/ConvexityTests.dir/rule:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/CMakeFiles/ConvexityTests.dir/rule
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/CMakeFiles/ConvexityTests.dir/rule
 .PHONY : ConvexityTests/CMakeFiles/ConvexityTests.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ ConvexityTests: ConvexityTests/CMakeFiles/ConvexityTests.dir/rule
 
 # fast build rule for target.
 ConvexityTests/fast:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/build
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/build
 .PHONY : ConvexityTests/fast
 
 # Convenience name for target.
 ConvexityTests/CMakeFiles/ConvexityTests-test.dir/rule:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/CMakeFiles/ConvexityTests-test.dir/rule
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ConvexityTests/CMakeFiles/ConvexityTests-test.dir/rule
 .PHONY : ConvexityTests/CMakeFiles/ConvexityTests-test.dir/rule
 
 # Convenience name for target.
@@ -196,7 +196,7 @@ ConvexityTests-test: ConvexityTests/CMakeFiles/ConvexityTests-test.dir/rule
 
 # fast build rule for target.
 ConvexityTests-test/fast:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build
 .PHONY : ConvexityTests-test/fast
 
 main.o: main.cc.o
@@ -204,7 +204,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.o
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -212,7 +212,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.i
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -220,7 +220,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.s
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests.dir/main.cc.s
 .PHONY : main.cc.s
 
 unit_tests.o: unit_tests.cc.o
@@ -228,7 +228,7 @@ unit_tests.o: unit_tests.cc.o
 
 # target to build an object file
 unit_tests.cc.o:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.o
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.o
 .PHONY : unit_tests.cc.o
 
 unit_tests.i: unit_tests.cc.i
@@ -236,7 +236,7 @@ unit_tests.i: unit_tests.cc.i
 
 # target to preprocess a source file
 unit_tests.cc.i:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.i
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.i
 .PHONY : unit_tests.cc.i
 
 unit_tests.s: unit_tests.cc.s
@@ -244,7 +244,7 @@ unit_tests.s: unit_tests.cc.s
 
 # target to generate assembly for a file
 unit_tests.cc.s:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.s
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f ConvexityTests/CMakeFiles/ConvexityTests-test.dir/build.make ConvexityTests/CMakeFiles/ConvexityTests-test.dir/unit_tests.cc.s
 .PHONY : unit_tests.cc.s
 
 # Help Target
@@ -279,6 +279,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

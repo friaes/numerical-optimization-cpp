@@ -1,4 +1,4 @@
-# Install script for directory: /home/rodrigo/jmcs/aopt/aopt-exercise3/MassSpringSystem
+# Install script for directory: /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/MassSpringSystem
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

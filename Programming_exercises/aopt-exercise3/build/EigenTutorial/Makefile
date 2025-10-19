@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3
+CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3/build
+CMAKE_BINARY_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles /home/rodrigo/jmcs/aopt/aopt-exercise3/build/EigenTutorial//CMakeFiles/progress.marks
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles 0
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/EigenTutorial//CMakeFiles/progress.marks
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/clean
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/preinstall
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/preinstall
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 EigenTutorial/CMakeFiles/EigenTutorial-test.dir/rule:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/CMakeFiles/EigenTutorial-test.dir/rule
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EigenTutorial/CMakeFiles/EigenTutorial-test.dir/rule
 .PHONY : EigenTutorial/CMakeFiles/EigenTutorial-test.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ EigenTutorial-test: EigenTutorial/CMakeFiles/EigenTutorial-test.dir/rule
 
 # fast build rule for target.
 EigenTutorial-test/fast:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build
 .PHONY : EigenTutorial-test/fast
 
 unit_tests.o: unit_tests.cc.o
@@ -190,7 +190,7 @@ unit_tests.o: unit_tests.cc.o
 
 # target to build an object file
 unit_tests.cc.o:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.o
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.o
 .PHONY : unit_tests.cc.o
 
 unit_tests.i: unit_tests.cc.i
@@ -198,7 +198,7 @@ unit_tests.i: unit_tests.cc.i
 
 # target to preprocess a source file
 unit_tests.cc.i:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.i
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.i
 .PHONY : unit_tests.cc.i
 
 unit_tests.s: unit_tests.cc.s
@@ -206,7 +206,7 @@ unit_tests.s: unit_tests.cc.s
 
 # target to generate assembly for a file
 unit_tests.cc.s:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.s
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(MAKE) $(MAKESILENT) -f EigenTutorial/CMakeFiles/EigenTutorial-test.dir/build.make EigenTutorial/CMakeFiles/EigenTutorial-test.dir/unit_tests.cc.s
 .PHONY : unit_tests.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

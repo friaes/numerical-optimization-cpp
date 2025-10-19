@@ -84,14 +84,16 @@ namespace AOPT {
                 const int top_left = get_grid_index(i, j + 1);
                 const int top_right = get_grid_index(i + 1, j + 1);
 
+                // Add top edge spring
                 if (j + 1 == n_grid_y_) {
-                    // Add top edge spring
                     sg_.add_edge(top_left, top_right, k, l);
                 }
+
+                // Add rightmost edge spring
                 if (i + 1 == n_grid_x_) {
-                    // Add rightmost edge spring
                     sg_.add_edge(bottom_right, top_right, k, l);
                 } 
+                
                 // Horizontal spring
                 sg_.add_edge(bottom_left, bottom_right, k, l);
 
@@ -99,8 +101,8 @@ namespace AOPT {
                 sg_.add_edge(bottom_left, top_left, k, l);
 
                 // Diagonal springs
-                sg_.add_edge(bottom_left, top_right, k, diagonal_l);    // / diagonal
-                sg_.add_edge(bottom_right, top_left, k, diagonal_l);    // \ diagonal
+                sg_.add_edge(bottom_left, top_right, k, diagonal_l); // diagonal (/)
+                sg_.add_edge(bottom_right, top_left, k, diagonal_l); // diagonal (\)
             }
         }
         //------------------------------------------------------//

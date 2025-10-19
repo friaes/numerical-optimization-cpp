@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rodrigo/jmcs/aopt/aopt-exercise3
-# Build directory: /home/rodrigo/jmcs/aopt/aopt-exercise3/build
+# Source directory: /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3
+# Build directory: /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

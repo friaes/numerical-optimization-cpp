@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3
+CMAKE_SOURCE_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rodrigo/jmcs/aopt/aopt-exercise3/build
+CMAKE_BINARY_DIR = /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build
 
 # Include any dependencies generated for this target.
 include GridSearch/CMakeFiles/GridSearch-test.dir/depend.make
@@ -70,18 +70,18 @@ include GridSearch/CMakeFiles/GridSearch-test.dir/progress.make
 include GridSearch/CMakeFiles/GridSearch-test.dir/flags.make
 
 GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o: GridSearch/CMakeFiles/GridSearch-test.dir/flags.make
-GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o: /home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch/unit_tests.cc
+GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o: /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch/unit_tests.cc
 GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o: GridSearch/CMakeFiles/GridSearch-test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o"
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o -MF CMakeFiles/GridSearch-test.dir/unit_tests.cc.o.d -o CMakeFiles/GridSearch-test.dir/unit_tests.cc.o -c /home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch/unit_tests.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o"
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.o -MF CMakeFiles/GridSearch-test.dir/unit_tests.cc.o.d -o CMakeFiles/GridSearch-test.dir/unit_tests.cc.o -c /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch/unit_tests.cc
 
 GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/GridSearch-test.dir/unit_tests.cc.i"
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch/unit_tests.cc > CMakeFiles/GridSearch-test.dir/unit_tests.cc.i
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch/unit_tests.cc > CMakeFiles/GridSearch-test.dir/unit_tests.cc.i
 
 GridSearch/CMakeFiles/GridSearch-test.dir/unit_tests.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/GridSearch-test.dir/unit_tests.cc.s"
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch/unit_tests.cc -o CMakeFiles/GridSearch-test.dir/unit_tests.cc.s
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch/unit_tests.cc -o CMakeFiles/GridSearch-test.dir/unit_tests.cc.s
 
 # Object files for target GridSearch-test
 GridSearch__test_OBJECTS = \
@@ -96,18 +96,18 @@ Build/bin/GridSearch-test: lib/libgtest.a
 Build/bin/GridSearch-test: lib/libgtest_main.a
 Build/bin/GridSearch-test: lib/libgtest.a
 Build/bin/GridSearch-test: GridSearch/CMakeFiles/GridSearch-test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rodrigo/jmcs/aopt/aopt-exercise3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../Build/bin/GridSearch-test"
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GridSearch-test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../Build/bin/GridSearch-test"
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GridSearch-test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 GridSearch/CMakeFiles/GridSearch-test.dir/build: Build/bin/GridSearch-test
 .PHONY : GridSearch/CMakeFiles/GridSearch-test.dir/build
 
 GridSearch/CMakeFiles/GridSearch-test.dir/clean:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch && $(CMAKE_COMMAND) -P CMakeFiles/GridSearch-test.dir/cmake_clean.cmake
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch && $(CMAKE_COMMAND) -P CMakeFiles/GridSearch-test.dir/cmake_clean.cmake
 .PHONY : GridSearch/CMakeFiles/GridSearch-test.dir/clean
 
 GridSearch/CMakeFiles/GridSearch-test.dir/depend:
-	cd /home/rodrigo/jmcs/aopt/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rodrigo/jmcs/aopt/aopt-exercise3 /home/rodrigo/jmcs/aopt/aopt-exercise3/GridSearch /home/rodrigo/jmcs/aopt/aopt-exercise3/build /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch /home/rodrigo/jmcs/aopt/aopt-exercise3/build/GridSearch/CMakeFiles/GridSearch-test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3 /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/GridSearch /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch /home/rodrigo/jmcs/AOpt/Programming_exercises/aopt-exercise3/build/GridSearch/CMakeFiles/GridSearch-test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : GridSearch/CMakeFiles/GridSearch-test.dir/depend
 
