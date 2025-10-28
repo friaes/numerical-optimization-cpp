@@ -53,56 +53,70 @@ namespace AOPT {
             }
         }
 
+
+
         //add spring elements
         for (size_t i = 0; i < sg_.n_edges(); ++i)
             msp_.get()->add_spring_element(sg_.from_vertex(i), sg_.to_vertex(i), sg_.coefficient(i), sg_.length(i));
     }
 
 
+
+    
+
+
     template<class MassSpringProblem>
     void MassSpringSystemT<MassSpringProblem>::setup_spring_graph() {
+//         for(int j = 0; j <= n_grid_y_; j++)
+// for (int i = 0; i <= n_grid_x_; i++)
+// sg_.add_vertex(Point(i, j));
+// //add edges
+
+// for(int i = 0; i <= n_grid_x_; ++i) {
+// for(int j = 0; j <= n_grid_y_; ++j) {
+// //horizontal edge
+// sg_.add_edge(get_grid_index(i, j), get_grid_index(i+1, j), 1., 1.);
+// //vertical edge
+// sg_.add_edge(get_grid_index(i, j), get_grid_index(i, j+1), 1., 1.);
+// //diagonal edge
+// sg_.add_edge(get_grid_index(i, j), get_grid_index(i+1, j+1), 1., sqrt(2.));
+// //diagonal edge
+// sg_.add_edge(get_grid_index(i+1, j), get_grid_index(i, j+1), 1., sqrt(2.));
+// }
+// }
+// //add right most
+// for(int j = 0; j < n_grid_y_; ++j)
+// sg_.add_edge(get_grid_index(n_grid_x_, j), get_grid_index(n_grid_x_, j+1), 1., 1.);
+// //add top cap
+// for(int i = 0; i < n_grid_x_; ++i)
+// sg_.add_edge(get_grid_index(i, n_grid_y_), get_grid_index(i+1, n_grid_y_), 1., 1.);
+//------------------------------------------------------//
         //------------------------------------------------------//
         //TODO: set up the spring graph of n_grid_x by n_grid_y ()
-
-        // Add the nodes (vertices) to create the graph
-        for (int j = 0; j <= n_grid_y_; ++j) {
-            for (int i = 0; i <= n_grid_x_; ++i) {
+        
+        for (int i=0; i<=n_grid_x_; i++) {
+            for (int j=0; j<=n_grid_y_; j++) {
                 sg_.add_vertex(Point(i, j));
             }
         }
-        
-        // Parameters
-        const double l = 1.0; // edge length
-        const double diagonal_l = sqrt(2.0); // diagonal edge length
-        const double k = 1.0; // elastic constant
-        
-        // Add edges
-        for (int j = 0; j < n_grid_y_; ++j) {
-            for (int i = 0; i < n_grid_x_; ++i) {
-                const int bottom_left = get_grid_index(i, j);
-                const int bottom_right = get_grid_index(i + 1, j);
-                const int top_left = get_grid_index(i, j + 1);
-                const int top_right = get_grid_index(i + 1, j + 1);
 
-                if (j + 1 == n_grid_y_) {
-                    // Add top edge spring
-                    sg_.add_edge(top_left, top_right, k, l);
+        for (int i=0; i<=n_grid_x_; i++) {
+            for (int j=0; j<=n_grid_y_; j++) {
+                int vt1 = get_grid_index(i,j);
+                if (i<n_grid_x_) {
+                    sg_.add_edge(vt1, get_grid_index(i+1, j));
                 }
-                if (i + 1 == n_grid_x_) {
-                    // Add rightmost edge spring
-                    sg_.add_edge(bottom_right, top_right, k, l);
+                if (j < n_grid_y_) {
+                    sg_.add_edge(vt1, get_grid_index(i,j+1));
                 } 
-                // Horizontal spring
-                sg_.add_edge(bottom_left, bottom_right, k, l);
-
-                // Vertical spring
-                sg_.add_edge(bottom_left, top_left, k, l);
-
-                // Diagonal springs
-                sg_.add_edge(bottom_left, top_right, k, diagonal_l);    // / diagonal
-                sg_.add_edge(bottom_right, top_left, k, diagonal_l);    // \ diagonal
+                if (i<n_grid_x_ && j>0) {
+                    sg_.add_edge(vt1,  get_grid_index(i+1, j-1),1.0, sqrt(2.));
+                } 
+                if (i< n_grid_x_ && j<n_grid_y_) {
+                    sg_.add_edge(vt1, get_grid_index(i+1, j+1),1.0, sqrt(2.));
+                }
             }
-        }
+        }        
         //------------------------------------------------------//
     }
 
