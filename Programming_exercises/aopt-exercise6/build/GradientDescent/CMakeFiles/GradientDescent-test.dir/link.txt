@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/GradientDescent-test.dir/unit_tests.cc.o" -o ../Build/bin/GradientDescent-test  ../lib/libgtest.a ../lib/libgtest_main.a ../lib/libgtest.a 

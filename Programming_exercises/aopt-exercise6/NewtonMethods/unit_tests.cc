@@ -166,6 +166,85 @@ TEST(StandardNewton, CheckAlgorithm){
 }
 
 
+/** Additional tests for NewtonMethods::solve on quadratic problems */
+TEST(StandardNewton, QuadraticWithLinearTerm){
+    using Vec = FunctionQuadraticNDSparse::Vec;
+    using SMat = FunctionQuadraticNDSparse::SMat;
+
+    SMat A(2,2);
+    A.coeffRef(0,0) = 2; A.coeffRef(0,1) = 0;
+    A.coeffRef(1,0) = 0; A.coeffRef(1,1) = 5;
+
+    Vec b(2);
+    b << -4, 10;
+
+    FunctionQuadraticNDSparse func(A, b, 0);
+
+    Vec start_pt(2);
+    start_pt << 0, 0;
+
+    Vec result = NewtonMethods::solve(&func, start_pt);
+
+    Vec expected_result(2);
+    // solution of A x = -b  => x = -A^{-1} b
+    expected_result << 2, -2;
+
+    ASSERT_NEAR((result-expected_result).norm(), 0.0, 1e-9);
+}
+
+
+TEST(StandardNewton, IllConditionedQuadratic){
+    using Vec = FunctionQuadraticNDSparse::Vec;
+    using SMat = FunctionQuadraticNDSparse::SMat;
+
+    SMat A(2,2);
+    A.coeffRef(0,0) = 1e-6; A.coeffRef(0,1) = 0;
+    A.coeffRef(1,0) = 0;    A.coeffRef(1,1) = 1e6;
+
+    Vec b(2);
+    b << 1, -1;
+
+    FunctionQuadraticNDSparse func(A, b, 0);
+
+    Vec start_pt(2);
+    start_pt << 10, 10;
+
+    Vec result = NewtonMethods::solve(&func, start_pt);
+
+    Vec expected_result(2);
+    expected_result << -1e6, 1e-6; // -A^{-1} b
+
+    // ill-conditioned but exact for quadratic: allow relaxed absolute tolerance
+    ASSERT_NEAR((result-expected_result).norm(), 0.0, 1e-3);
+}
+
+
+TEST(StandardNewton, HigherDimQuadratic){
+    using Vec = FunctionQuadraticNDSparse::Vec;
+    using SMat = FunctionQuadraticNDSparse::SMat;
+
+    const int n = 5;
+    SMat A(n,n);
+    A.setZero();
+    for(int i=0;i<n;++i) A.coeffRef(i,i) = double(i+1);
+
+    Vec b(n);
+    for(int i=0;i<n;++i) b[i] = double(i+1);
+
+    FunctionQuadraticNDSparse func(A, b, 0);
+
+    Vec start_pt(n);
+    start_pt.setZero();
+
+    Vec result = NewtonMethods::solve(&func, start_pt);
+
+    Vec expected_result(n);
+    for(int i=0;i<n;++i) expected_result[i] = -1.0; // -b[i]/A_ii
+
+    ASSERT_NEAR((result-expected_result).norm(), 0.0, 1e-9);
+}
+
+
 /** Checks that the gradient descent gives the proper result */
 TEST(ProjectedNewton, CheckAlgorithmOnSpringElementWithoutLength){
 
