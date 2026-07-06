@@ -40,7 +40,6 @@ The `MassSpringSystem` module ties it together: a 2D network of point masses con
 ```
 .
 ├── Programming_exercises/
-│   ├── aopt-exercise0 … aopt-exercise10   # per-exercise checkpoints
 │   ├── aopt-all-solutions/                # the cumulative final library
 │   │   ├── include/{FunctionBase,Algorithms,Functions,Utils}
 │   │   ├── GridSearch/ GradientDescent/ NewtonMethods/ LBFGS/
