@@ -86,4 +86,4 @@ Each algorithm's `main.cc` prints usage when run without arguments, and each com
 
 ## Notes
 
-The algorithm bodies were the graded work: the course provided the framework (the `FunctionBase` interface, problem definitions, CMake, and test harnesses) with the optimization methods left to implement — marked by `//TODO: implement …` blocks inside each algorithm. `external/eigen` is the third-party Eigen library, included so the exercises build standalone.
+The algorithm bodies were the graded work: the course provided the framework (the `FunctionBase` interface, problem definitions, CMake, and test harnesses) with the optimization methods left to implement — marked by `//TODO: implement …` blocks inside each algorithm.
